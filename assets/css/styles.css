@@ -1,3 +1,95 @@
 body {
-	background: orange;
+	font-family: nunito;
+	background: #f1f2b5; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#135058,
+		#f1f2b5
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#135058,
+		#f1f2b5
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#container {
+	width: 500px;
+	margin: 100px auto;
+	background-color: #f7f7f7;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+	height: 300px;
+}
+
+h1 {
+	background-color: rgb(104, 104, 179);
+	color: white;
+	margin: 0;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 25px;
+}
+
+.fa-plus {
+	float: right;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	/* margin-left: 20px;
+	margin-top: 10px; */
+	background-color: #fff;
+	height: 40px;
+	/* center the li's in their box vertically */
+	line-height: 40px;
+	color: rgba(97, 91, 91, 0.877);
+}
+
+li:nth-child(2n) {
+	background-color: #f7f7f7;
+}
+
+li:hover span {
+	width: 40px;
+	opacity: 1;
+}
+
+span {
+	color: white;
+	background-color: red;
+	height: 40px;
+	width: 0;
+	text-align: center;
+	display: inline-block;
+	margin-right: 20px;
+	transition: 200ms;
+	opacity: 0;
+}
+
+input {
+	width: 100%;
+	padding: 10px 10px 10px 20px;
+	font-size: 20px;
+	background-color: #f7f7f7;
+	box-sizing: border-box;
+	color: rgb(75, 153, 226);
+	display: none;
+}
+
+input:focus {
+	background-color: #fff;
+	border: 3px solid rgb(162, 162, 219);
+	outline: none;
+}
+
+/* we add .completed class to use as a toggle */
+.completed {
+	color: gray;
+	text-decoration: line-through;
 }
