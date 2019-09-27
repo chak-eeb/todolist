@@ -1,3 +1,4 @@
+/* styled by specificity */
 body {
 	font-family: nunito;
 	background: #f1f2b5; /* fallback for old browsers */
@@ -35,6 +36,24 @@ h1 {
 	float: right;
 }
 
+input {
+	width: 100%;
+	padding: 10px 10px 10px 20px;
+	font-size: 20px;
+	background-color: #f7f7f7;
+	box-sizing: border-box;
+	color: rgb(75, 153, 226);
+	display: none;
+	/* to fix the gap between input and li's */
+	border: 3px solid rgba(0, 0, 0, 0);
+}
+
+input:focus {
+	background-color: #fff;
+	border: 3px solid rgb(162, 162, 219);
+	outline: none;
+}
+
 ul {
 	list-style-type: none;
 	margin: 0;
@@ -70,22 +89,6 @@ span {
 	margin-right: 20px;
 	transition: 200ms;
 	opacity: 0;
-}
-
-input {
-	width: 100%;
-	padding: 10px 10px 10px 20px;
-	font-size: 20px;
-	background-color: #f7f7f7;
-	box-sizing: border-box;
-	color: rgb(75, 153, 226);
-	display: none;
-}
-
-input:focus {
-	background-color: #fff;
-	border: 3px solid rgb(162, 162, 219);
-	outline: none;
 }
 
 /* we add .completed class to use as a toggle */
